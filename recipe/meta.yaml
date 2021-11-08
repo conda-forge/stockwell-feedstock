@@ -11,7 +11,7 @@ source:
   sha256: 885fb85c40063f00336755afa178a0445f5520015c6bfb1791ab346220ede399
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -43,6 +43,11 @@ about:
   summary: Time-frequency analysis through Stockwell transform
   license: CECILL-2.1
   license_file: LICENSE.txt
+  description: |
+    Python package for time-frequency analysis through Stockwell transform.
+    Based on original code from NIMH MEG Core Facility
+    (https://kurage.nimh.nih.gov/meglab/Meg/Stockwell).
+  dev_url: https://github.com/claudiodsf/stockwell
 
 extra:
   recipe-maintainers:
