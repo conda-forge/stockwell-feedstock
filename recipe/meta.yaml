@@ -1,5 +1,5 @@
 {% set name = "stockwell" %}
-{% set version = "1.0.7" %}
+{% set version = "1.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/stockwell-{{ version }}.tar.gz
-  sha256: 16b6bdadd13caa09e5cf8dc73763b1ac7b61c77ec0e72a45115abbe2567b963d
+  sha256: 157196478ebd17e0479e033fde78983731d15754068452fbe5a5492ec042ccef
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -44,7 +44,7 @@ test:
 about:
   home: https://github.com/claudiodsf/stockwell
   summary: Time-frequency analysis through Stockwell transform
-  license: CECILL-2.1
+  license: GPL-3.0-or-later
   license_file: LICENSE.txt
   description: |
     Python package for time-frequency analysis through Stockwell transform.
