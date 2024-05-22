@@ -1,5 +1,5 @@
 {% set name = "stockwell" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/stockwell-{{ version }}.tar.gz
-  sha256: 3f23bf18274642264da1835d85c0ed5cc6f5a47e4661c4c5790a59fe88c825af
+  sha256: 5e1549174e390115398265678120bcda41f6093192b88132bec6c94c03c55d39
 
 build:
   number: 0
