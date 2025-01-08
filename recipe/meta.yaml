@@ -1,5 +1,5 @@
 {% set name = "stockwell" %}
-{% set version = "1.1.2" %}
+{% set version = "1.2" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/stockwell-{{ version }}.tar.gz
-  sha256: 5e1549174e390115398265678120bcda41f6093192b88132bec6c94c03c55d39
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/stockwell-{{ version }}.tar.gz
+  sha256: 48b1df34fb27bb110650823c2a9f2b4e2a6a7412f3c1c7b05d69419552a26ea8
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
   host:
     - numpy
     - pip
+    - setuptools
     - python
     - fftw
   run:
