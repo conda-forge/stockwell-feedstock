@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/stockwell-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/stockwell-{{ version }}.tar.gz
   sha256: 48b1df34fb27bb110650823c2a9f2b4e2a6a7412f3c1c7b05d69419552a26ea8
 
 build:
