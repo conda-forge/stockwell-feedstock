@@ -4,14 +4,14 @@
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/stockwell-{{ version }}.tar.gz
   sha256: 48b1df34fb27bb110650823c2a9f2b4e2a6a7412f3c1c7b05d69419552a26ea8
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -36,11 +36,10 @@ test:
     - stockwell
   commands:
     - pip check
+    - pytest --pyargs stockwell
   requires:
     - pip
     - pytest
-  commands:
-    - pytest --pyargs stockwell
 
 about:
   home: https://github.com/claudiodsf/stockwell
